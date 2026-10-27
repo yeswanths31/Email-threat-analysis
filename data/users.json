@@ -1,0 +1,10 @@
+[
+  {
+    "id": "75b55a59-ecb1-462f-8b52-036c5495aa93",
+    "name": "MailGuard Admin",
+    "email": "deepan46953@gmail.com",
+    "passwordHash": "pbkdf2$310000$601c7058fd50c2680e8d9f13be39502d$2353f4cb41b68014e43e7e906ad64625d14f97c2f29301c3b327ac0fddb75e1a",
+    "role": "admin",
+    "createdAt": "2026-10-18T13:34:56.777395Z"
+  }
+]

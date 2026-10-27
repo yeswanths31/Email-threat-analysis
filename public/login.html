@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101b35">
+<title>Sign in · MailGuard</title>
+<link rel="stylesheet" href="/css/style.css"><script defer src="/js/auth.js"></script>
+</head>
+<body class="auth-page">
+<main class="auth-layout">
+  <section class="auth-showcase">
+    <a class="brand showcase-brand" href="/login.html"><span class="brand-icon">✦</span><span>MailGuard<small>INTELLIGENT THREAT DEFENSE</small></span></a>
+    <div class="showcase-content">
+      <div class="security-orb"><span>⌁</span><i></i></div>
+      <div class="eyebrow">YOUR DIGITAL FIRST LINE OF DEFENSE</div>
+      <h2>Spot the threat.<br><em>Stop the click.</em></h2>
+      <p>Analyze suspicious messages and links with a clear, easy-to-understand security workspace.</p>
+      <div class="showcase-points"><span>✓ Email risk analysis</span><span>✓ URL warning checks</span><span>✓ Shareable PDF reports</span></div>
+    </div>
+    <div class="showcase-footer"><span class="pulse-dot"></span> Security workspace · Local prototype</div>
+  </section>
+  <section class="auth-main">
+    <div class="auth-card">
+      <div class="eyebrow">WELCOME BACK</div><h1>Sign in to MailGuard</h1>
+      <p class="muted auth-subtitle">Choose your access type to continue.</p>
+      <div class="login-mode" role="group" aria-label="Login type">
+        <button type="button" class="mode-option selected" data-login-role="user" aria-pressed="true"><span class="mode-icon">♙</span><span><strong>User login</strong><small>Analyze emails and URLs</small></span></button>
+        <button type="button" class="mode-option" data-login-role="admin" aria-pressed="false"><span class="mode-icon">♜</span><span><strong>Admin login</strong><small>Manage the workspace</small></span></button>
+      </div>
+      <form id="loginForm">
+        <input type="hidden" name="role" id="loginRole" value="user">
+        <label>Email address<input type="email" name="email" autocomplete="username" required maxlength="254" placeholder="you@example.com"></label>
+        <label>Password<input type="password" name="password" autocomplete="current-password" required maxlength="128" placeholder="Enter your password"></label>
+        <button class="btn primary full auth-submit" type="submit"><span id="loginButtonText">Sign in as user</span><span>→</span></button>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </form>
+      <p class="auth-switch">New to MailGuard? <a href="/register.html">Create a user account</a></p>
+      <p class="auth-safe"><span>◈</span> Your password is verified securely and never shown in reports.</p>
+    </div>
+    <p class="footnote">MailGuard · Heuristic screening can flag warning signs but cannot guarantee safety.</p>
+  </section>
+</main>
+</body></html>
